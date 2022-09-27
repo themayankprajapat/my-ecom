@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Product from '../componets/productCard/product'
-import {pics} from '../componets/productCard/image'
+import { pics } from '../componets/productCard/image'
+import ProductList from '../componets/productCard/productList'
 export default function Home() {
   return (
     <div>
@@ -12,7 +11,7 @@ export default function Home() {
       </Head>
       <main>
         <h1>Store</h1>
-        <Product id={pics[0].id} name={pics[0].picName} price={pics[0].price} disc={pics[0].discription}/>
+        <ProductList pics={pics}/>
       </main>
     </div>
   )
