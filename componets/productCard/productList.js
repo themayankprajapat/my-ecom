@@ -1,10 +1,11 @@
 import Product from "./product";
-const ProductList = ({pics})=> {
-    const ProductComponent = pics.map(i=>{
-        console.log(pics[i]);
-    return <Product id={pics[i].id} name={pics[i].picName} price={pics[i].price} disc={pics[i].discription}/>});
-    return (
-        {ProductComponent}
+import { pics } from "./image";
+const ProductList = ()=> {
+    const productComponent = pics.map(i=>{
+        return <Product id={i.id} name={i.userName} price={i.price} disc={i.discription}/>
+    });
+    return(
+        [productComponent]
     )
 }
 export default ProductList;
