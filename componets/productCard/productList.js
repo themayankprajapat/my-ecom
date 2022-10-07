@@ -1,11 +1,20 @@
 import Product from "./product";
 import { pics } from "./image";
-const ProductList = ()=> {
-    const productComponent = pics.map(i=>{
-        return <Product id={i.id} name={i.userName} price={i.price} disc={i.discription}/>
-    });
-    return(
-        [productComponent]
-    )
-}
+const ProductList = () => {
+  return (
+    <div>
+      {pics.map((i, j) => {
+        return (
+          <Product
+            key={j}
+            id={i.id}
+            name={i.userName}
+            price={i.price}
+            disc={i.discription}
+          />
+        );
+      })}
+    </div>
+  );
+};
 export default ProductList;

@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
       <main>
         <h1>Store</h1>
-        <ProductList pics={pics}/>
+        <ul><ProductList pics={pics}/></ul>
       </main>
     </div>
   )
