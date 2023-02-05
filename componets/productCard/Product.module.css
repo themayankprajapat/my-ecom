@@ -1,0 +1,39 @@
+.gridList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  grid-gap: 2em;
+}
+.productCard {
+  border: solid black;
+  border-radius: 20px;
+  background-color: antiquewhite;
+  margin: 0 0 10px;
+  width: 250px;
+}
+.image {
+  margin: 0;
+  width: inherit;
+  object-fit: cover;
+  height: 200px;
+}
+.discription {
+  text-align: justify;
+  font-size: 12px;
+}
+.cardBottom {
+  padding: 10px;
+}
+.cardTitle {
+  margin: 0;
+}
+.button {
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  border: 0;
+  background-color: rgb(2, 15, 12);
+  padding: 0.6em 2em;
+  border-radius: 20px;
+}

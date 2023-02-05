@@ -1,12 +1,13 @@
 import Product from "./product";
 import { pics } from "./image";
+import styles from "./Product.module.css";
 const ProductList = () => {
   return (
-    <div>
-      {pics.map((i, j) => {
+    <ul className={styles.gridList}>
+      {pics.map((i) => {
         return (
           <Product
-            key={j}
+            key={i}
             id={i.id}
             name={i.userName}
             price={i.price}
@@ -14,7 +15,7 @@ const ProductList = () => {
           />
         );
       })}
-    </div>
+    </ul>
   );
 };
 export default ProductList;
